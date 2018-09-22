@@ -19,6 +19,7 @@ import org.testng.annotations.Optional;
 import org.testng.asserts.SoftAssert;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
+import reporting.TestLogger;
 import utility.DataReader;
 
 import java.io.File;
@@ -392,6 +393,11 @@ public class CommonAPI {
             softAssert.assertTrue(actualList.get(i).contains(expectedList.get(i)));
             System.out.println("LinkVerified " + expectedList.get(i));
         }
+    }
+    public void SendKeys(WebElement element, String keys, String elementName){
+        TestLogger.log("Sending Keys to " + elementName);
+        element.sendKeys(keys);
+        TestLogger.log("Keys Sent Successfully to "+ elementName);
     }
 
 }

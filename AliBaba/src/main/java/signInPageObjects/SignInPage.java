@@ -80,9 +80,10 @@ public class SignInPage extends CommonAPI {
 
     public void signInUsingDataProvider(String email, String passCode, String message) throws InterruptedException {
 
-        account.sendKeys(email);
+       // account.sendKeys(email);
+        SendKeys(account,email, "account");
         password.sendKeys(passCode);
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         loginSubmit.click();
         String errorMessage = signInErrorMesage.getText();
         TestLogger.log("Error Message: "+errorMessage);
