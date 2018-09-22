@@ -1,0 +1,61 @@
+Welcome to Team3 Project !!!
+Common Rules
+1. Work with your own module
+2. If you have any suggestion feel free to talk to team mates and inform Team Lead without delay.
+3. This is a team work and massive collaboration required. We are going to use git hub for version control.
+which is very sensitive if we do not maintain with care.
+4. You all will have your own Branch of the project. You shall work in your own branch and push to your branch.
+5. After proper review we will merge file to master.
+6. Do not do any modification in Generic Part, if you want to have some change in generic part inform Team Lead and
+consult with team mates. Git hub causes issue when multiple user changes same file in some given time. In order to
+avoid this issue we have to follow few rules.
+7. From my end if I make any change in CommonApPI/Generic part I will duly inform you all by any means and I am
+always available to talk to team mates and changes in the ComonAPI shall be informed by all parties without delay.
+-------------
+1. If possible we will try to get jira account so tha we can have some idea of managing project in Jira
+
+2. How to Update your pom.xml file when you open your Module?
+After "<artifactId>AliBaba</artifactId>" write bellow code, system will do the rest, groupId and version will come
+automatically .
+
+<dependencies>
+        <dependency>
+            <groupId></groupId>
+            <artifactId>Generic</artifactId>
+            <version></version>
+        </dependency>
+    </dependencies>
+
+3. Once u create Module Add .iml file to .gitignore file. Procedure> hover ur mouse over .iml file and click right button>click
+Add to .gitignore file.
+4. hoe to push in github branch
+ >git branch (Ensure * is in your branch, which ensures you current branch)
+ >git status(check for modified file)
+ >git add . (add all file)
+ >git commit -m "meaningful message"
+ >git push origin branchName
+
+ *****Special condition*****
+ if window changed to shell prompt do following
+ > press A
+ > write message
+ > esc > : > wq
+ It shall take you cmd/git bash
+ ****************************
+ 5. How to Merge file in Master form Branch
+
+ Step 1: From your project repository, bring in the changes and test.
+ git fetch origin
+ git checkout -b Md_Jahidul_Islam origin/Md_Jahidul_Islam
+ git merge master
+
+ Step 2: Merge the changes and update on GitHub.
+ git checkout master
+ git merge --no-ff Md_Jahidul_Islam
+ git push origin master
+
+
+
+
+
+

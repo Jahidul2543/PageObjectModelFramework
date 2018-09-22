@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="RestApi Automation Test" parallel="false">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserName" value="Chrome"/>
+    <parameter name="browserVersion" value="62.0"/>
+    <parameter name="url" value="http://info.venturepulse.org:8080/service-webapp/"/>
+
+    <test name = "RestApi 1">
+        <groups>
+            <run>
+                <include name="apiTestApiStatusCode"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="rest.TestApiStatusCode"/>
+        </classes>
+    </test>
+    <test name = "RestApi 2">
+        <groups>
+            <run>
+                <include name="apiTestApiMediaType"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="rest.TestApiMediaType"/>
+        </classes>
+    </test>
+    <test name="RestApi 3">
+        <groups>
+            <run>
+                <include name="testJsonData"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="rest.TestJsonData"/>
+        </classes>
+
+    </test>
+
+</suite>
