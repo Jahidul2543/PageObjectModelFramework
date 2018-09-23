@@ -12,9 +12,8 @@ import com.google.api.client.auth.oauth2.Credential;
         import com.google.api.client.util.store.FileDataStoreFactory;
         import com.google.api.services.sheets.v4.Sheets;
         import com.google.api.services.sheets.v4.SheetsScopes;
-        import com.google.api.services.sheets.v4.model.ValueRange;
 
-        import java.io.IOException;
+import java.io.IOException;
         import java.io.InputStream;
         import java.io.InputStreamReader;
         import java.util.Arrays;
@@ -51,7 +50,7 @@ public class GoogleSheetReader {
      */
     public static Credential authorize() throws IOException {
         // Load client secrets.
-        InputStream in = GoogleSheetReader.class.getResourceAsStream("/client_secret.json");
+        InputStream in = GoogleSheetReader.class.getResourceAsStream("/client_secret1.json");
         GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
         // Build flow and trigger user authorization request.
         GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(

@@ -14,15 +14,15 @@
 
 <test name = "Alibaba Home">
     <classes>
+        <class name="testSignInPageObjects.TestGoogleSheetsPage"/>
         <!--<class name="testSignInPageObjects.TestGoogleSheetsPage"/>
     <class name="testHomePageObjects.TestHomePage"/>
        <class name="testGetHelPPageObjects.TestGetHelpHerePage"/>
       <class name="testSignInPageObjects.TestSignInPage"/>
       <class name="testProductsPageObjects.TestProductPage"/>
       <class name="testSignInPageObjects.TestByInputFromExls"/>
-      <class name="testSignInPageObjects.TestGoogleSheetsPage"/>
-      <class name="testKeyWordDriven.TestFeatures"/>-->
-         <class name="testSignInPageObjects.SinInUsingDataProviderPageTest"/>
+      <class name="testKeyWordDriven.TestFeatures"/>
+         <class name="testSignInPageObjects.SinInUsingDataProviderPageTest"/>-->
 
     </classes>
 
